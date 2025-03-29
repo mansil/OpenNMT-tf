@@ -2,18 +2,18 @@
 
 # OpenNMT-tf
 
-OpenNMT-tf is a general purpose sequence learning toolkit using TensorFlow 2. While neural machine translation is the main target task, it has been designed to more generally support:
+OpenNMT-tf é um pacote de ferramentas de aprendizagem de sequência de utilização geral utilizando o tensorflow 2. Embora a tradução automática neural seja a principal tarefa de destino, este foi criado para um suporte mais geral:
 
-* sequence to sequence mapping
-* sequence tagging
-* sequence classification
-* language modeling
+* mapeamento de sequência para sequência
+* etiquetagem de sequência
+* classificação de sequência
+* modelagem de idioma
 
-The project is production-oriented and comes with [backward compatibility guarantees](https://github.com/OpenNMT/OpenNMT-tf/blob/master/CHANGELOG.md).
+O projeto é orientado à produção e vem com [garantia de compatibilidade de reversão](https://github.com/OpenNMT/OpenNMT-tf/blob/master/CHANGELOG.md).
 
-## Key features
+## Funcionalidades principais
 
-### Modular model architecture
+### Arquitetura de modelo modular
 
 Models are described with code to allow training custom architectures and overriding default behavior. For example, the following instance defines a sequence to sequence model with 2 concatenated input features, a self-attentional encoder, and an attentional RNN decoder sharing its input and output embeddings:
 
@@ -59,7 +59,7 @@ OpenNMT-tf is fully integrated in the TensorFlow 2 ecosystem:
 * Visualization with [TensorBoard](https://www.tensorflow.org/tensorboard)
 * `tf.function` graph tracing that can be [exported to a SavedModel](https://opennmt.net/OpenNMT-tf/serving.html) and served with [TensorFlow Serving](https://github.com/OpenNMT/OpenNMT-tf/tree/master/examples/serving/tensorflow_serving) or [Python](https://github.com/OpenNMT/OpenNMT-tf/tree/master/examples/serving/python)
 
-### Compatibility with CTranslate2
+### Compatibilidade com CTranslate2
 
 [CTranslate2](https://github.com/OpenNMT/CTranslate2) is an optimized inference engine for OpenNMT models featuring fast CPU and GPU execution, model quantization, parallel translations, dynamic memory usage, interactive decoding, and more! OpenNMT-tf can [automatically export](https://opennmt.net/OpenNMT-tf/serving.html#ctranslate2) models to be used in CTranslate2.
 
@@ -92,7 +92,7 @@ OpenNMT-tf also implements most of the techniques commonly used to train and eva
 
 *See the [documentation](https://opennmt.net/OpenNMT-tf/) to learn how to use these features.*
 
-## Usage
+## Utilização
 
 OpenNMT-tf requires:
 
@@ -108,7 +108,7 @@ pip install OpenNMT-tf
 
 *See the [documentation](https://opennmt.net/OpenNMT-tf/installation.html) for more information.*
 
-### Command line
+### Linha de comandos
 
 OpenNMT-tf comes with several command line utilities to prepare data, train, and evaluate models.
 
@@ -126,7 +126,7 @@ onmt-main --model_type <model> --config <config_file.yml> --auto_config <run_typ
 
 *For more information and examples on how to use OpenNMT-tf, please visit [our documentation](https://opennmt.net/OpenNMT-tf).*
 
-### Library
+### Biblioteca
 
 OpenNMT-tf also exposes [well-defined and stable APIs](https://opennmt.net/OpenNMT-tf/package/overview.html), from high-level training utilities to low-level model layers and dataset transformations.
 
@@ -179,8 +179,8 @@ More examples using OpenNMT-tf as a library can be found online:
 
 *For a complete overview of the APIs, see the [package documentation](https://opennmt.net/OpenNMT-tf/package/overview.html).*
 
-## Additional resources
+## Recursos adicionais
 
-* [Documentation](https://opennmt.net/OpenNMT-tf)
-* [Forum](https://forum.opennmt.net)
+* [Documentação](https://opennmt.net/OpenNMT-tf)
+* [Fórum](https://forum.opennmt.net)
 * [Gitter](https://gitter.im/OpenNMT/OpenNMT-tf)
